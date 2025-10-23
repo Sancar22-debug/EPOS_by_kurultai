@@ -66,4 +66,4 @@ This is a frontend project for the EPOS game. Contributions and improvements are
 
 ## License
 
-© 2024 Kurultai. All rights reserved.
+© 2025 Kurultai. All rights reserved.

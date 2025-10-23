@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Pixel Art Game Theme - Cozy RPG Colors */
+    --background: 206 100% 94%;
+    --foreground: 140 60% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 60% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 60% 15%;
+
+    /* Primary: Forest Green */
+    --primary: 140 60% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Sky Blue */
+    --secondary: 206 65% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted: Soft Green */
+    --muted: 120 20% 85%;
+    --muted-foreground: 140 20% 40%;
+
+    /* Accent: Warm Sand/Earth */
+    --accent: 30 45% 65%;
+    --accent-foreground: 140 60% 15%;
+
+    /* Action: Red */
+    --destructive: 4 78% 56%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 70%;
+    --input: 140 20% 85%;
+    --ring: 140 60% 15%;
+
+    --radius: 0rem;
+    
+    /* Custom Pixel Theme Variables */
+    --pixel-border: 3px;
+    --pixel-shadow: 4px 4px 0px hsl(var(--primary));
+    --hero-gradient: linear-gradient(180deg, hsl(206 100% 94%) 0%, hsl(206 80% 85%) 100%);
+    --game-gradient: linear-gradient(135deg, hsl(140 45% 45%) 0%, hsl(120 40% 35%) 100%);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 140 35% 12%;
+    --foreground: 120 20% 90%;
+
+    --card: 140 40% 15%;
+    --card-foreground: 120 20% 90%;
+
+    --popover: 140 40% 15%;
+    --popover-foreground: 120 20% 90%;
+
+    --primary: 120 30% 70%;
+    --primary-foreground: 140 60% 15%;
+
+    --secondary: 206 45% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 140 25% 25%;
+    --muted-foreground: 120 15% 60%;
+
+    --accent: 30 35% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 4 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 25% 25%;
+    --input: 140 25% 25%;
+    --ring: 120 30% 70%;
+    
+    --pixel-shadow: 4px 4px 0px hsl(var(--primary));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Modern custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+  
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary)) hsl(var(--muted));
+  }
+  
+  /* Pixel-perfect rendering */
+  img.pixel-art {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+}
+
+@layer utilities {
+  /* Pixel borders */
+  .pixel-border {
+    border: var(--pixel-border) solid hsl(var(--primary));
+    box-shadow: var(--pixel-shadow);
+  }
+  
+  .pixel-border-light {
+    border: var(--pixel-border) solid hsl(var(--background));
+    box-shadow: 4px 4px 0px hsl(var(--border));
+  }
+  
+  /* Pixel hover effect */
+  .pixel-hover {
+    transition: all 0.1s ease;
+  }
+  
+  .pixel-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px hsl(var(--primary));
+  }
+  
+  .pixel-hover:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px hsl(var(--primary));
+  }
+}

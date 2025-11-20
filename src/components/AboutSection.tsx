@@ -25,15 +25,15 @@ const AboutSection = () => {
             
             <div className="font-body text-base sm:text-lg md:text-xl text-foreground/90 space-y-6 mb-8">
               <p>
-                EPOS is a peaceful adventure game where you can explore the rich tapestry of Kyrgyz history and culture. 
-                Journey through beautiful pixel art landscapes, meet fascinating characters, and discover ancient stories 
-                that have been passed down through generations.
+                EPOS is a fun adventure game about Kyrgyz culture and history. 
+                You can explore beautiful places, meet cool characters, and learn amazing stories 
+                from the past.
               </p>
               
               <p>
-                Immerse yourself in a cozy world filled with traditional yurts, majestic mountains, and vibrant communities. 
-                Experience the warmth of nomadic hospitality, learn about ancient customs, and embark on a journey that 
-                celebrates cultural heritage while having fun.
+                Play in a cozy world with traditional yurts, big mountains, and friendly people. 
+                Feel the warmth of nomadic life, learn about old traditions, and have a great time 
+                celebrating culture.
               </p>
               
               <p className="font-semibold text-primary">

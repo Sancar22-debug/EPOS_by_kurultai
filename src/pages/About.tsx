@@ -12,10 +12,10 @@ const About = () => {
           <div className="pixel-border bg-card p-8 shadow-xl">
           <h1 className="font-title text-3xl text-primary mb-4">About Us</h1>
           <p className="font-body text-foreground/90 leading-relaxed">
-            We are Team Kurultai FIP #6, 10 third-year students from TSI AUCA, combining
-            skills in design, development, marketing, and management. Our mission is to
-            create a game that celebrates real people, real history, and authentic culture,
-            offering players an experience far from typical Westernized stories.
+            We are Team Kurultai FIP #6, 10 third-year students from TSI AUCA. We work on 
+            design, development, marketing, and management. Our goal is to make a game that 
+            shows real people, real history, and true culture. We want to give players 
+            something different from typical Western stories.
           </p>
           </div>
           <div className="flex items-end justify-center">

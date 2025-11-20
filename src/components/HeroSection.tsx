@@ -1,4 +1,5 @@
 import skyBg from "@/assets/sky-mountains-bg.png";
+import tsiLogo from "@/assets/tsi-logo.png";
 
 const HeroSection = () => {
   return (
@@ -15,6 +16,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/30" />
       
       <div className="relative z-10 container mx-auto px-4 text-center">
+        
         <h1 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary mb-6 drop-shadow-lg leading-relaxed">
           Welcome to EPOS
         </h1>
@@ -38,6 +40,15 @@ const HeroSection = () => {
             Learn More
           </button>
         </div>
+      </div>
+
+      {/* TSI Logo - Left Bottom */}
+      <div className="absolute bottom-10 left-10 z-20">
+        <img 
+          src={tsiLogo} 
+          alt="Technical School of Innovation" 
+          className="h-[100px] w-[300px] object-contain"
+        />
       </div>
 
       {/* Scroll indicator */}

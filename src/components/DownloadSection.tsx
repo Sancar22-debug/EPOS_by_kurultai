@@ -1,4 +1,4 @@
-import { Smartphone, Tablet, Monitor } from "lucide-react";
+import { Smartphone, Tablet, Monitor, Gamepad2, GamepadIcon } from "lucide-react";
 import appStoreBadge from "@/assets/Download_on_the_App_Store_Badge.png";
 import googlePlayBadge from "@/assets/google_play.b8a7e58.png";
 
@@ -15,7 +15,7 @@ const DownloadSection = () => {
         </p>
         
         {/* Device Icons */}
-        <div className="flex justify-center items-center gap-8 mb-12">
+        <div className="flex flex-wrap justify-center items-center gap-6 mb-12">
           <div className="flex flex-col items-center gap-2">
             <Smartphone className="w-8 h-8 text-primary" />
             <span className="font-body text-sm text-foreground/70">Phone</span>
@@ -27,6 +27,14 @@ const DownloadSection = () => {
           <div className="flex flex-col items-center gap-2">
             <Monitor className="w-8 h-8 text-primary" />
             <span className="font-body text-sm text-foreground/70">PC</span>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Gamepad2 className="w-8 h-8 text-primary" />
+            <span className="font-body text-sm text-foreground/70">PlayStation</span>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <GamepadIcon className="w-8 h-8 text-primary" />
+            <span className="font-body text-sm text-foreground/70">Nintendo</span>
           </div>
         </div>
         

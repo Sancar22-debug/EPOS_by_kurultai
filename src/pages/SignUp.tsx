@@ -34,10 +34,6 @@ const SignUp = () => {
             <Apple className="w-5 h-5" />
             Continue with Apple
           </Button>
-          <Button variant="outline" className="w-full pixel-border pixel-hover font-nav flex items-center gap-2 justify-center">
-            <Github className="w-5 h-5" />
-            Continue with GitHub
-          </Button>
         </div>
 
         <p className="font-body text-center text-sm text-foreground/80">

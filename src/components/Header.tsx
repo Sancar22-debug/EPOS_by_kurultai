@@ -30,7 +30,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo/Brand */}
         <div className="font-title text-lg md:text-xl text-primary">
-          Kurultai
+          EPOS
         </div>
 
         {/* Desktop Navigation */}
